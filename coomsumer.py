@@ -160,7 +160,7 @@ def stockReader(js):
 
 
 def checkStock():
-    '''Requests stock & passes appriopriate args for message. Returns boolean'''
+    '''Requests stock & passes appropriate args for message. Returns boolean'''
 
     url = ('https://inv.mp.microsoft.com/v2.0/inventory/US/8WJ714N3RBTL/490G/'
            '8WFTS4MLK3L9')
