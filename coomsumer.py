@@ -30,8 +30,8 @@ SMTP_SERVER = 'smtp.gmail.com' # email server you're using to send
 PORT = 465 # email server port
 
 # Twilio text data
-TWILIO_SID = 'SID' # your Twilio SID
-TWILIO_TOKEN = 'AUTHENTICATION_TOKEN' # your Twilio authentication token
+TWILIO_SID = 'SID'
+TWILIO_TOKEN = 'AUTHENTICATION_TOKEN'
 SENDER_PHONE = '+15551234567' # your Twilio phone number
 RECEIVER_PHONE = '+15551234567' # phone number you want to text
 
