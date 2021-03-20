@@ -45,6 +45,7 @@ out_of_stock = (f'Bot Status: {green_light} Online | Stock: '
 in_stock = (f'Bot Status: {green_light} Online | Stock: '
            f'{green_light} In Stock')
 
+# These templates are used to populate json files if files are non-existent
 current_template = {"9000000013": False, "0059": False, "0075": False,
                     "0064": False, "0037": False, "0031": False}
 previous_template = {"9000000013": False, "0059": False, "0075": False,
