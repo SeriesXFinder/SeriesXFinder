@@ -69,7 +69,7 @@ def sendTweet(message, set_status=False):
         error_alert = f'Failed to send tweet: "{message}"!'
         trace_log = traceback.print_exc()
         print(f'{trace_log}\n{error_alert}')
-        # Alerts you if a tweet fails to send for any reason
+        # Alerts you if a tweet fails to send
         sendText(error_alert)
         sendEmail(error_alert)
 
