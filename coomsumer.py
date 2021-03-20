@@ -66,8 +66,10 @@ def sendTweet(message, set_status=False):
     except:
         error_alert = f'Failed to send tweet: "{message}"!'
         trace_log = traceback.print_exc()
-        # Only prints when it errors with no crash to save disk space
         print(f'{trace_log}\n{error_alert}')
+        # Alerts you if a tweet fails to send for any reason
+        sendText(error_alert)
+        sendEmail(error_alert)
 
 
 def sendEmail(message):
