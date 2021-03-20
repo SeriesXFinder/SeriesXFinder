@@ -36,9 +36,9 @@ SENDER_PHONE = '+15551234567' # your Twilio phone number
 RECEIVER_PHONE = '+15551234567' # phone number you want to text
 
 green_light = u'\U0001F7E2' # For Twitter emoji
-red_light = u'\U0001F534' # For Twitter emoji
-checkered_flag = (u'\U0001F3C1') # For Twitter emoji
-red_flag = (u'\U0001F6A9') # For Twitter emoji
+red_light = u'\U0001F534'
+checkered_flag = u'\U0001F3C1'
+red_flag = u'\U0001F6A9'
 offline = f'Bot Status: {red_light} Offline'
 out_of_stock = (f'Bot Status: {green_light} Online | Stock: '
            f'{red_light} Out of Stock')
