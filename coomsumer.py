@@ -53,7 +53,7 @@ previous_template = {"9000000013": False, "0059": False, "0075": False,
 
 
 def sendTweet(message, set_status=False):
-    '''Sends tweets and updates account name'''
+    '''Sends tweets and updates profile name'''
 
     auth = tweepy.OAuthHandler(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET)
     auth.set_access_token(TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET)
@@ -61,6 +61,7 @@ def sendTweet(message, set_status=False):
     try:
         if set_status:
             name = message
+            # Profile name field is used to display bot and stock status
             api.update_profile(name)
         if not set_status:
             api.update_status(message)
